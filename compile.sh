@@ -1,3 +1,2 @@
 npm run compile 
-vsce package
-npm install -g vsce
+vsce package --baseContentUrl https://github.com/charlpcronje/Compare-Files-VSCode-Extension --baseImagesUrl https://github.com/charlpcronje/Compare-Files-VSCode-Extension 

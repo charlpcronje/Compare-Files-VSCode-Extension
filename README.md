@@ -22,4 +22,4 @@ This is a Visual Studio Code extension that allows you to compare two selected f
 
 ## License
 
-This extension is licensed under the [MIT License](LICENSE.md).
+This extension is licensed under the [MIT License](./LICENSE.md).
