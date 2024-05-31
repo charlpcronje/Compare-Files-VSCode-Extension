@@ -1,0 +1,42 @@
+{
+    "name": "compare-files",
+    "displayName": "Compare Files",
+    "icon": "images/icon.png",
+    "description": "Compares two selected files in Visual Studio Code",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.89.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [{
+            "command": "extension.compareFiles",
+            "title": "Compare Files"
+        }],
+        "menus": {
+            "explorer/context": [{
+                "when": "explorerResourceIsFolder == false",
+                "command": "extension.compareFiles",
+                "group": "comparison"
+            }]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "eslint . --ext .ts,.tsx",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^16.0.0",
+        "@types/vscode": "^1.89.0",
+        "@typescript-eslint/eslint-plugin": "^5.0.0",
+        "@typescript-eslint/parser": "^5.0.0",
+        "eslint": "^8.0.0",
+        "typescript": "^4.9.0"
+    }
+}
